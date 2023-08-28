@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MFTextPickerView" customModule="MFTextPicker_Example" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="343"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSu-Je-FNj">
+                    <rect key="frame" x="45" y="0.0" width="260" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="YQJ-Og-bbF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ryX-vY-a8W">
+                    <rect key="frame" x="0.0" y="45" width="350" height="1"/>
+                    <color key="backgroundColor" systemColor="systemGray4Color"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="hGO-Ks-Sgn"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sed-KI-9KH">
+                    <rect key="frame" x="305" y="0.0" width="45" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="EeG-Ja-gZG"/>
+                        <constraint firstAttribute="height" constant="40" id="PFm-Vb-0x0"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="15" maxX="0.0" maxY="15"/>
+                    <state key="normal" image="popup_close_medium"/>
+                    <connections>
+                        <action selector="closeAction" destination="iN0-l3-epB" eventType="touchUpInside" id="slq-Kf-vbC"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="DEg-kG-u0v">
+                    <rect key="frame" x="0.0" y="50" width="350" height="250"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="ZRM-jE-KKk"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="5jo-Xt-RZp"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="VjP-uQ-Tez"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemGreenColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Sed-KI-9KH" secondAttribute="trailing" id="0Rl-QH-l04"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="DEg-kG-u0v" secondAttribute="bottom" constant="12" id="1im-FQ-fQf"/>
+                <constraint firstItem="Sed-KI-9KH" firstAttribute="leading" secondItem="qSu-Je-FNj" secondAttribute="trailing" id="5rg-kf-bci"/>
+                <constraint firstItem="DEg-kG-u0v" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="8kq-9V-ESI"/>
+                <constraint firstItem="DEg-kG-u0v" firstAttribute="top" secondItem="ryX-vY-a8W" secondAttribute="bottom" constant="4" id="Do0-Bh-N5Q"/>
+                <constraint firstItem="DEg-kG-u0v" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="EWq-go-CTV"/>
+                <constraint firstItem="qSu-Je-FNj" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="T2D-Ob-Hd5"/>
+                <constraint firstItem="ryX-vY-a8W" firstAttribute="top" secondItem="qSu-Je-FNj" secondAttribute="bottom" id="an9-KY-3VK"/>
+                <constraint firstItem="ryX-vY-a8W" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="kt4-gj-dgc"/>
+                <constraint firstItem="ryX-vY-a8W" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="pi5-PR-Xes"/>
+                <constraint firstItem="Sed-KI-9KH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="uWF-I4-6ci"/>
+                <constraint firstItem="qSu-Je-FNj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="z02-eN-zuZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="closeButton" destination="Sed-KI-9KH" id="8Mt-pe-w3g"/>
+                <outlet property="dividerView" destination="ryX-vY-a8W" id="Iru-fr-ZLf"/>
+                <outlet property="optionTableView" destination="DEg-kG-u0v" id="Q2K-m5-cd4"/>
+                <outlet property="tableHeightConstraint" destination="ZRM-jE-KKk" id="2eu-fp-XQF"/>
+                <outlet property="titleLabel" destination="qSu-Je-FNj" id="VM9-HD-PkK"/>
+            </connections>
+            <point key="canvasLocation" x="185.50724637681162" y="138.17934782608697"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="popup_close_medium" width="30" height="30"/>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
