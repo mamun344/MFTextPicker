@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		840B773D2A9D33040073B3D3 /* MFTextPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 840B773C2A9D33040073B3D3 /* MFTextPicker */; };
 		8422580D2A9BA6C20022EA00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422580C2A9BA6C20022EA00 /* AppDelegate.swift */; };
 		842258112A9BA6C20022EA00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842258102A9BA6C20022EA00 /* ViewController.swift */; };
 		842258142A9BA6C20022EA00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842258122A9BA6C20022EA00 /* Main.storyboard */; };
@@ -30,7 +29,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				840B773D2A9D33040073B3D3 /* MFTextPicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +81,6 @@
 			);
 			name = "MFTextPicker Example";
 			packageProductDependencies = (
-				840B773C2A9D33040073B3D3 /* MFTextPicker */,
 			);
 			productName = "MFTextPicker Example";
 			productReference = 842258092A9BA6C20022EA00 /* MFTextPicker Example.app */;
@@ -114,7 +111,6 @@
 			);
 			mainGroup = 842258002A9BA6C20022EA00;
 			packageReferences = (
-				840B773B2A9D33040073B3D3 /* XCRemoteSwiftPackageReference "MFTextPicker" */,
 			);
 			productRefGroup = 8422580A2A9BA6C20022EA00 /* Products */;
 			projectDirPath = "";
@@ -364,25 +360,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		840B773B2A9D33040073B3D3 /* XCRemoteSwiftPackageReference "MFTextPicker" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mamun344/MFTextPicker";
-			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		840B773C2A9D33040073B3D3 /* MFTextPicker */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 840B773B2A9D33040073B3D3 /* XCRemoteSwiftPackageReference "MFTextPicker" */;
-			productName = MFTextPicker;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 842258012A9BA6C20022EA00 /* Project object */;
 }
