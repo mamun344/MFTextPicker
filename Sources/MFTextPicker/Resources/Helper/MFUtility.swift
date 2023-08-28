@@ -61,6 +61,6 @@ extension UIView {
     }
     
     class func nib() -> UINib {
-        return UINib.init(nibName: identifier() , bundle: nil)
+        return UINib.init(nibName: identifier() , bundle: .mFTextPicker)
     }
 }
