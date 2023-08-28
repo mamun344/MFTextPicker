@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "mftextpicker",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mamun344/MFTextPicker",
+      "state" : {
+        "revision" : "77aca5b32639358caaca72c0f5b59addc991fd87",
+        "version" : "1.0.3"
+      }
+    }
+  ],
+  "version" : 2
+}
