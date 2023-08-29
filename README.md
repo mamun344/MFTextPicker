@@ -39,6 +39,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 ```
 
+##### Show from anywhere
+
+
+```
+import MFTextPicker
+
+
+@IBAction func showDesignation(){
+
+    MFTextPicker.show(designations, title: "Select Designation", index: selectedIndex) { index, text in
+        if let index {
+            // hold the index to pass futher picker show
+            self.selectedIndex = index
+        }
+    }
+}
+
+```
+
+
 ##### Customize picker
 
 In some places if you want to set colors as you wish, then call the config() func  before calling the show() func.
@@ -57,7 +77,6 @@ import MFTextPicker
 
     MFTextPicker.show(designations, title: "Select Designation", index: selectedIndex) { index, text in
         if let index {
-            // hold the index to pass further picker show
             self.selectedIndex = index
         }
             
