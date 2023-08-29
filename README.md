@@ -50,7 +50,7 @@ import MFTextPicker
 
     MFTextPicker.show(designations, title: "Select Designation", index: selectedIndex) { index, text in
         if let index {
-            // hold the index to pass futher picker show
+            // hold the index to pass further picker show
             self.selectedIndex = index
         }
     }
