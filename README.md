@@ -1,6 +1,6 @@
 # MFTextPicker
 
-![alt text](https://gist.github.com/mamun344/edf99b648def9bd7a7a6fc5bb509e3ef#file-mf_textpicker-ss-png "Demo ss")
+![alt text](https://gist.githubusercontent.com/mamun344/edf99b648def9bd7a7a6fc5bb509e3ef/raw/b16b353e4439415c00853ddb840b7a8012411943/mf_textpicker%2520ss.png "Demo ss")
 
 A simple and elegant text picker for iOS (UIKit) written in Swift.
 
